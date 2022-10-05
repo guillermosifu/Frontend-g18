@@ -37,6 +37,8 @@
 .header__professional-image{
     border-radius: 50%;
 }
+.header__professional-image:hover{
+    border: orange solid px;}
 
 
 /* 
