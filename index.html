@@ -3,80 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Primary Meta Tags -->
-<title>PAGINA PERSONAL</title>
-<meta name="title" content="PAGINA PERSONAL">
-<meta name="description" content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS">
+    <title>PAGINA PERSONAL</title>
+    <meta name="title" content="PAGINA PERSONAL" />
+    <meta
+      name="description"
+      content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS"
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://frontend-g18.vercel.app/">
-<meta property="og:title" content="PAGINA PERSONAL">
-<meta property="og:description" content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS">
-<meta property="og:image" content="https://i.postimg.cc/28wCMB73/pagina-personal-image.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frontend-g18.vercel.app/" />
+    <meta property="og:title" content="PAGINA PERSONAL" />
+    <meta
+      property="og:description"
+      content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS"
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/28wCMB73/pagina-personal-image.png"
+    />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://frontend-g18.vercel.app/">
-<meta property="twitter:title" content="PAGINA PERSONAL">
-<meta property="twitter:description" content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS">
-<meta property="twitter:image" content="https://i.postimg.cc/28wCMB73/pagina-personal-image.png">
-  
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://frontend-g18.vercel.app/" />
+    <meta property="twitter:title" content="PAGINA PERSONAL" />
+    <meta
+      property="twitter:description"
+      content="ES UNA PAGINA QUE AYUDA A PRENDER HTML Y CSS"
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.postimg.cc/28wCMB73/pagina-personal-image.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./semana2/styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- esto es el encabezado -->
-    <header class="header">
-      <nav class="nav">
-        <ul>
-        <li>
-          <a href="">TRABAJOS</a>
-        </li>
-        <li>
-          <a href="">SOBRE MI</a>
-        </li>
-        <li>
-          <a href="">CONTACTAME</a>
-        </li>
-      </ul>
-      </nav>
-    </header>
-<section class="banner">
-  <div>
-    <h1 class="title">Mi nombre es Guillermo Sifuentes</h1>
-    <h2 class="title">Desarrollador Full Stack</h2>
-    <p class="resume">Soy el programador de tus sueños</p>
-    <button class="btn-primary">Download Resumen</button>
-  </div>
-  <div>
-    <img class="img-profile" src="./portfol.png" alt="">
-  </div>
-</section>
-<hr>
-<section>
-<div class="section-works">
-<h4 class="title-section">PROGRESS JOB</h4>
-  <div class="card">
-    <div>
-      <a href="./semana2/reto2/index.html" target="_blank">
-        <img src="./reto2.png" alt="">
-      </a>
-    </div>
-    <div class="container-detail">
-     <h2>Reto 2 NFT-Design</h2>
-     <h3>Aprendiendo HTML-CSS</h3>
-    </div>
-  </div>
+    <main class="wrap">
+      <!-- esto es el encabezado -->
+      <header class="header">
+        <nav>
+          <a href="#">INICIO</a>
+          <a href="#">SOBRE MI</a>
+          <a href="#">Blog</a>
+          <a href="#">PORTAFOLIO</a>
+          <a href="#">CONTACTAME</a>
+          <div class="animation start-home"></div>
+        </nav>
+      </header>
 
-</div>
-
-</section>
-
-
-
-  
+      <section class="banner">
+        <div>
+          <h1 class="title">Mi nombre es Guillermo Sifuentes</h1>
+          <h2 class="title">Desarrollador Full Stack</h2>
+          <p class="resume">Soy el programador de tus sueños</p>
+          <button class="btn-primary">Download Resumen</button>
+        </div>
+        <div>
+          <img class="img-profile" src="./semana2/src/portfol.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="section-works">
+        <div>
+          <h4 class="title-section">PROGRESS JOB</h4>
+          <div class="card">
+            <div>
+              <a href="./semana2/reto2/index.html" target="_blank">
+                <img src="./semana2/src/reto2.png" alt="" />
+              </a>
+            </div>
+            <div class="container-detail">
+              <button  class="btn-detail"><a href="">OPEN</a></button>
+              <h2 class="title-container">Reto 2 NFT-Design</h2>
+              <h3 class="title-container short">Aprendiendo HTML-CSS</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>DERECHOS RESERVADOS G18 © | 2022 ®</p>
+      </footer>
+    </main>
   </body>
   <footer></footer>
 </html>
