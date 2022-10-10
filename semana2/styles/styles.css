@@ -149,12 +149,9 @@ nav a:nth-child(5):hover~.animation{
    padding: 50px;
   
 }
-.container-detail{  
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   border: solid;
+.container-detail{ 
+   padding-top: 40px;    
+   text-align: center;
 }
 .btn-detail{
    color: #fff;
