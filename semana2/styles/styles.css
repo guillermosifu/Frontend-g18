@@ -115,7 +115,7 @@ nav a:nth-child(5):hover~.animation{
     box-shadow: 0 15px 25px red;
     animation-name: boton-volador;
     animation-duration: 5s;
-    animation-iteration-count: 1;
+    animation-iteration-count:2;
 
  }
  @keyframes boton-volador{
@@ -123,9 +123,11 @@ nav a:nth-child(5):hover~.animation{
         margin-left: 100%;
     }
     to{
-        margin-left: -0.7%;
+        margin-left: 7%;
     }
+ 
  }
+ 
 
  .btn-primary:hover{
     background-color: yellow;
