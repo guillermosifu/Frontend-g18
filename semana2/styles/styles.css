@@ -202,13 +202,44 @@ a{
  }
 
  /* footer */
- .footer{   
+
+ .footer{
    background-color: red;
    padding: 20px;
    border-bottom-left-radius: 20px;
-   border-bottom-right-radius: 20px;
-   height: 3   rem;
+   border-bottom-right-radius: 20px;   
+   height: 2rem;
    text-align: center;
    font-size: 21px;
    color: #fff;
- }
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.icons{
+   width: 18rem;
+   height: 2rem;
+   display: flex;
+   justify-content: space-between;   
+   padding: 20px; 
+}
+
+.footer__link-icon-container{
+   display: flex;
+   transition: all 0.5s;
+   max-width: 2rem;
+   
+}
+
+.footer__link-icon-container:hover{
+   transform: scale(1.25);
+}
+
+.footer__link-icon{
+   width: 100%;
+   border-radius: 50%;
+}
