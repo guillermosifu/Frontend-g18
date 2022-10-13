@@ -135,3 +135,30 @@ padding:20px;
     background: #57eff9;
   }
   
+  /* PORTAFOLIO */
+
+  .portfolio{
+    padding: 34px 176px 94px;
+    background-color: #ffd233;
+  }
+
+.portfolio h2{
+    color: #00AD84;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.portfolio-images{
+ border-radius: 4px;
+ display: flex;
+ flex-wrap: wrap;
+}
+.portfolio figure img{
+    margin: 4px;
+    border: none;
+}
+
+.portfolio figure img:hover{
+    
+    border: solid 1px yellow;
+}
