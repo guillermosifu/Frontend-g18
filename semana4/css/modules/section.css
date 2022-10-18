@@ -52,3 +52,23 @@
 .section__link-letter:nth-child(6){
     color: var(--letter-color-6);
 }
+
+.section__link-letter::before{
+    content: var(--letter);
+    position: absolute;
+    top: 60%;
+    left: 0;
+    filter: blur(0.125rem);
+    transform: rotateX(140deg);
+
+}
+
+.section__link-letter::after{
+    content: var(--letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.125);
+    filter: blur(0.25rem);
+}
+
