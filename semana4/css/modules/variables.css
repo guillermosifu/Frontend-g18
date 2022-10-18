@@ -14,3 +14,18 @@
     --letter-color-5:#f5926b;
     --leter-color-5:#ff00ff;
 }
+
+
+@media (min-width:760px){
+    :root{
+        --padding-section:2rem;
+        --padding-container:0.75rem;
+        --max-width-container:1024px;
+        --primary-theme-color:red;
+        --letter-color-1:green;
+        --letter-color-2:violet;
+        --leter-color-3:aqua;
+        
+   
+    }
+}

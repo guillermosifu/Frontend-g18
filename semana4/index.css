@@ -5,7 +5,8 @@
 
 .body{
     background-color:var(--primary-theme-color) ;
-    color: var(--primary-text-color);
+    background-color: var(--color-back);    
     font-family: var(--primary-font-family);
     margin: 0;
 }
+

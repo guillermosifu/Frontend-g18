@@ -31,7 +31,7 @@
 }
 
 .section__link-letter:hover{
-    filter: brightness(2.5);
+    filter: brightness(5);
 }
 
 .section__link-letter:nth-child(1){
@@ -59,7 +59,7 @@
     top: 60%;
     left: 0;
     filter: blur(0.125rem);
-    transform: rotateX(140deg);
+    transform: rotateX(150deg);
 
 }
 
