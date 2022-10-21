@@ -7,23 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <header >
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark P-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand " href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link text-light" href="#">Link</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
                 <ul class="dropdown-menu">
@@ -51,6 +51,11 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="./src/4k-marvel-wallpaper-scaled.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50">
+                        <h5>Primer producto</h5>
+                         <p>esta en promocion</p>
+                         <button type="button" class="btn btn-secondary">comprar</button>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <img src="./src/descargar-fondo-de-pantalla-venom-eddie-brock-marvel-4k-ultra-hd-scaled.jpg" class="d-block w-100" alt="...">
@@ -72,15 +77,60 @@
         <section class="bg-dark py-5">
             <div class="container">
            <div class="row">
-           <div class="col-md-4">
+           <div class=" col-xl-4 col-md-6">
              <div class="card m-3 bg-secondary text-light">
-                <img src="./src/marvel-modern-4k-ultra-hd-wallpaper-1.jpg" alt="">
-                
-
+                <img src="./src/marvel-modern-4k-ultra-hd-wallpaper-1.jpg" class="card-img-top" style="height:180px;" alt="mc">
+                <div class="card-body">
+                 <h5 class="card-title text-dark text-center">El universo marvel y sus personajes</h5>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat cupiditate, vel iure qui repellendus ut laudantium, eos deserunt consectetur ipsum aliquam, ab veritatis non eveniet corporis neque ex excepturi?</p>
+                 <a href="" class="btn btn-primary w-100">buscar</a>
+                </div>
              </div>
            </div>
+           <div class=" col-xl-4 col-md-6">
+            <div class="card m-3 bg-secondary text-light">
+               <img src="./src/marvel-superhero-8k-arte-digital-8k-hd-4k-fondo-de-pantalla-scaled.jpg" class="card-img-top" style="height:180px;" alt="mc">
+               <div class="card-body">
+                <h5 class="card-title text-dark text-center">El universo marvel y sus personajes</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat cupiditate, vel iure qui repellendus ut laudantium, eos deserunt consectetur ipsum aliquam, ab veritatis non eveniet corporis neque ex excepturi?</p>
+                <a href="" class="btn btn-primary w-100">buscar</a>
+               </div>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6">
+            <div class="card m-3 bg-secondary text-light">
+               <img src="./src/marvel-superhero-8k-arte-digital-8k-hd-4k-fondo-de-pantalla-scaled.jpg" class="card-img-top" style="height:180px;" alt="mc">
+               <div class="card-body">
+                <h5 class="card-title text-dark text-center">El universo marvel y sus personajes</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste placeat cupiditate, vel iure qui repellendus ut laudantium, eos deserunt consectetur ipsum aliquam, ab veritatis non eveniet corporis neque ex excepturi?</p>
+                <a href="" class="btn btn-primary w-100">buscar</a>
+               </div>
+            </div>
+          </div>
+
            </div>
             </div>
+        </section>
+        <!--  cartilla overlay -->
+        <section class="bg-dark py-5">
+            <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                <div class="card text-bg-dark">
+                   <img class="card-img opacity-50" src="./src/marvel-avengers-age-of-ultron-uhd-4k-wallpaper-scaled.jpg" alt="marvel">
+                   <div class="card-img-overlay">
+                    <h5 class="card-title">
+                        card title
+                    </h5>
+                    <p class="card-text">
+                      una nueva forma de ver la card
+                    </p>
+                   </div>
+                </div>
+               </div>
+            </div>
+            </div>
+
         </section>
 
     </main>
