@@ -2,9 +2,6 @@
 
 
 
-body{
-    background-color:$color-principal;
-}
 
 .cuadrado{
     width: 300x;
@@ -12,8 +9,8 @@ body{
     background-color: $color-red;
 }
 
-.body{
-    background-color: red;
+body{
+    background-color: $color-principal
 }
 
 //mixin en sass 
@@ -25,14 +22,29 @@ body{
 
 //el nombre puede ser cualquiera
 
-
-
 .success{
-    //aca en vex de hacer estilos comunes voy a llamar al mixin creado
-    @include alertita;
+  @include alertita($bg:red);
 }
 
 .info{
-    font-size: 30px;
-    @include alertita($bg:rgb(37,194,240),$color-text:#000,$padding-1:40px)
+    @include alertita;
 }
+
+//asi como los mixin  retorna una porcion de codigo . tambuen puede retorna  una clase directa
+@mixin generate-icons($name,$icon,$color,$size){
+    .div-icon-#{$name}{
+        background: url("https://i.postimg.cc/WzG9XJD9/telefono.jpg");
+
+    }
+}
+
+
+
+
+
+
+@include generate-icons("phone","telefono.jpg",rgb(252,135,143),400px)
+
+// https://i.postimg.cc/WzG9XJD9/telefono.jpg
+//https://i.postimg.cc/L6sfy1Zn/email.png
+//https://i.postimg.cc/wjCmT44m/laptop.jpg
