@@ -3,11 +3,11 @@
 
 
 
-.cuadrado{
-    width: 300x;
-    height: 300px;
-    background-color: $color-red;
-}
+// .cuadrado{
+//     width: 300x;
+//     height: 300px;
+//     background-color: $color-red;
+// }
 
 body{
     background-color: $color-principal
@@ -23,7 +23,7 @@ body{
 //el nombre puede ser cualquiera
 
 .success{
-  @include alertita($bg:red);
+  @include alertita($bg:green);
 }
 
 .info{
@@ -33,7 +33,11 @@ body{
 //asi como los mixin  retorna una porcion de codigo . tambuen puede retorna  una clase directa
 @mixin generate-icons($name,$icon,$color,$size){
     .div-icon-#{$name}{
-        background: url("https://i.postimg.cc/WzG9XJD9/telefono.jpg");
+        background: url("./img/#{$icon}");
+        border: solid 2px $color;
+        background-size: cover;
+        width: $size;
+        height: $size;
 
     }
 }
@@ -43,8 +47,7 @@ body{
 
 
 
-@include generate-icons("phone","telefono.jpg",rgb(252,135,143),400px)
+@include generate-icons("phone","telefono.jpg",rgb(252,135,143),400px);
+@include generate-icons("mail","email.png",rgb(252,135,143),400px);
+@include generate-icons("laptop","laptop.jpg",rgb(252,135,143),400px);
 
-// https://i.postimg.cc/WzG9XJD9/telefono.jpg
-//https://i.postimg.cc/L6sfy1Zn/email.png
-//https://i.postimg.cc/wjCmT44m/laptop.jpg
