@@ -1,0 +1,186 @@
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    h3{
+        margin-right: auto;
+    }
+    .article-pricipal{
+        display: flex;
+        section{            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        figure{
+            width: 100%;
+            order: 2;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        section{
+            width: 100%;
+            padding-right: 20px;
+            
+            h2{
+                padding-bottom: 20px;
+            }
+            .article-author{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h4{
+                    color: $color-primario;
+                    font-family: $font-family-h;
+                    font-size: 12px;
+                    font-weight: 900;
+                    letter-spacing: 0.06em;
+                    padding-bottom: 10px;
+                }
+                p{
+                    color: rgba(7, 33, 60, 0.549);
+                }
+
+                a{
+                    margin-left:  20px;
+                }
+                i{
+                    color: $color-primario;     
+                    &:hover{
+                        color: $color-secundario;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.267);
+                    }              
+                }
+            }
+        }
+    }
+        
+    .article{
+        width: 30%;
+        
+        figure{
+            width: 100%;
+            img{
+                display: block;
+                width: 100%;
+                height: 180px;
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+        section{
+            width: 100%;
+            padding-right: 20px;
+            
+            h2{
+                padding-bottom: 20px;
+                font-size: 18px;
+            }
+            .article-author{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 15px;
+
+                h4{
+                    color: $color-primario;
+                    font-family: $font-family-h;
+                    font-size: 12px;
+                    font-weight: 900;
+                    letter-spacing: 0.06em;
+                    padding-bottom: 5px;
+                }
+                p{
+                    color: rgba(7, 33, 60, 0.549);
+                }
+
+                a{
+                    margin-left:  20px;
+                }
+                i{
+                    color: $color-primario;
+                    &:hover{
+                        color: $color-secundario;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.267);
+                    }                   
+                }
+            }
+        }
+
+        &:hover{
+            padding: 10px;
+            box-shadow: 1px 5px 30px rgba(102, 102, 102, 0.267);
+            border-radius: 10px;
+        }        
+    }
+    
+    .all-articles{
+        margin: 40px 0 20px 0;
+        margin-left: auto;
+        font-family: $font-family-h;
+        font-size: 16px;
+        color: $color-secundario;
+        text-transform:uppercase;
+        font-weight: 700;
+    }
+}
+
+.article, section, h2{
+    transition: all .5s ease;
+}
+
+i{
+    transition: all .2s ease;
+}
+
+section h2:hover{
+    color: $color-secundario;
+    text-decoration: underline;
+}
+
+i:hover{
+    font-size: 20px;
+    
+}
+
+
+@media(max-width:600px){
+    .popular{
+        .article-pricipal{
+            display: block;
+        }
+        .article{
+            width: 80%;
+            section {
+                padding-right: 0 !important;
+              }
+        }
+    }
+}
+
+@media(max-width:480px){
+    .popular{
+        .article-pricipal{
+            display: block;
+            flex-wrap: wrap;
+            flex-direction: column;
+            section{
+                width: 100%;                
+            }
+        }
+        .article{
+            width: 100%;
+            section {
+                padding-right: 0 !important;
+              }
+        }
+    }
+}

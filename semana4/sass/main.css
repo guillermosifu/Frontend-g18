@@ -28,7 +28,7 @@ body {
 
 .div-icon-mail {
   background: url("./img/email.png");
-  border: solid 2px rgb(252, 135, 143);
+  border: solid 2px rgb(220, 135, 143);
   background-size: cover;
   width: 400px;
   height: 400px;
@@ -36,7 +36,7 @@ body {
 
 .div-icon-laptop {
   background: url("./img/laptop.jpg");
-  border: solid 2px rgb(252, 135, 143);
+  border: solid 2px rgb(255, 135, 143);
   background-size: cover;
   width: 400px;
   height: 400px;

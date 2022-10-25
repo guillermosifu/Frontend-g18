@@ -1,0 +1,132 @@
+.all-article {
+    padding: 30px 0 60px 0;
+    .article {
+      display: flex;
+      gap: 20px;
+      padding: 10px 0;
+  
+      figure {
+        height: 200px;
+        img {
+          display: block;
+          height: 200px;
+        }
+      }
+      section {
+        width: 100%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        h2 {
+          padding-bottom: 20px;
+          font-size: 18px;
+        }
+        .article-author {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 15px;
+  
+          h4 {
+            color: $color-primario;
+            font-family: $font-family-h;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            padding-bottom: 5px;
+          }
+          p {
+            color: rgba(7, 33, 60, 0.549);
+          }
+  
+          a {
+            margin-left: 20px;
+          }
+          i {
+            color: $color-primario;
+            &:hover {
+              color: $color-secundario;
+              border-radius: 5px;
+              padding: 5px 10px;
+              box-shadow: 0px 5px 10px rgba(102, 102, 102, 0.267);
+            }
+          }
+        }
+      }
+      &:hover {
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(102, 102, 102, 0.5);
+        padding: 10px;
+      }
+      &:hover img {
+        border-radius: 10px;
+      }
+    }
+  
+    .pages {
+      padding: 10px 0;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-family: $font-family-p;
+      color: $color-secundario;
+  
+      a {
+        color: inherit;
+        &:hover {
+          color: $color-tercero;
+        }
+      }
+  
+      i {
+        margin: 0 10px;
+        color: inherit;
+      }
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .all-article {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      section {
+        padding-right: 0 !important;
+      }
+  
+      figure {
+        height: 200px;
+        img {
+          display: block;
+          height: 200px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .all-article {
+      .article {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        section {
+          padding-right: 0 !important;
+        }
+  
+        figure {
+          width: 100%;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  

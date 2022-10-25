@@ -1,0 +1,169 @@
+.banner {
+    position: relative;
+    margin-top: 50px;
+    height: 200px;
+    background: $color-tercero;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Vector.png");
+    background: linear-gradient(40deg, #2d75cc, #6ebbff);
+  
+    h1 {
+      position: absolute;
+      padding-bottom: 30px;
+      font-family: $font-family-h;
+      font-size: 28px;
+      color: inherit;
+    }
+  
+    p {
+      position: absolute;
+      top: 55%;
+      letter-spacing: 0.06em;
+      font-weight: 100;
+      width: 50%;
+      color: inherit;
+    }
+  
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  
+  .banner {
+    .circle-1 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(245, 245, 245, 0);
+      border-radius: 100px;
+      border: 8px solid rgba(255, 255, 255, 0.6);
+      box-sizing: border-box;
+    }
+    .circle-1:nth-child(1) {
+      animation-name: circle1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      bottom: 40px;
+      left: -1%;
+    }
+    .circle-1:nth-child(2) {
+      animation-name: circle1;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      left: 15%;
+      bottom: -15px;
+    }
+    .circle-1:nth-child(3) {
+      animation-name: circle1;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      left: 30%;
+      // top: -18px;
+      bottom: 50px;
+    }
+    .circle-1:nth-child(4) {
+      animation-name: circle1;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      left: 60%;
+      bottom: 10px;
+    }
+    .circle-1:nth-child(5) {
+      animation-name: circle1;
+      animation-duration: 6s;
+      animation-iteration-count: infinite;
+      left: 92%;
+      // top: 50px;
+      bottom: 50px;
+    }
+  
+    @keyframes circle1 {
+      from {
+        bottom: 100%;
+      }
+  
+      to {
+          bottom: -20%;
+      }
+    }
+    /**/
+    .circle-2 {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: rgba(245, 245, 245, 0.2);
+      border-radius: 100px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      p{
+          position: absolute;
+          top: -3px;
+          font-family: $font-family-p;
+          color:rgba(245, 245, 245, 0.2);
+      }
+    }
+    .circle-2:nth-child(6) {
+      animation-name: circle2;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      left: 5%;
+      bottom: 20px;
+      // top: 10px;
+    }
+    .circle-2:nth-child(7) {
+      animation-name: circle2;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      left: 35%;
+      // top: 90px;
+      bottom: 20px;
+    }
+    .circle-2:nth-child(8) {
+      animation-name: circle2;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      left: 45%;
+      bottom: -5px;
+    }
+    .circle-2:nth-child(9) {
+      animation-name: circle2;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      left: 57%;
+      // top: 10px;
+      bottom: 20px;
+    }
+    .circle-2:nth-child(10) {
+      animation-name: circle2;
+      animation-duration: 25s;
+      animation-iteration-count: infinite;    
+      left: 85%;
+      bottom: 20px;
+    }
+  
+    @keyframes circle2 {
+      from {
+          bottom: 100%;
+      }
+  
+      to {
+          bottom: -20%;
+      }
+    }
+  }
+  
+  @media (max-width: 600px){
+    .circle-1:nth-child(5) {
+      left: 85% !important;
+    }
+  }

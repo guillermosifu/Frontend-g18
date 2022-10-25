@@ -1,0 +1,46 @@
+.search{
+    padding: 40px 0;
+    div{
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: rgb(237, 237, 237);
+
+        i{
+            position: absolute;
+            color: $color-tercero;
+            font-size: 14px;
+            left: 25px;
+        }
+        
+        input{
+            transition: all .5s ease;
+            outline: none;
+            width: inherit;
+            padding: 13px 0 13px 60px;
+            border-radius: inherit;
+            border: 0px;
+            background: rgba(237, 237, 237, 0);
+            color: $color-tercero;
+            z-index: 1;  
+            &:focus{
+                //x y difumidado
+                box-shadow: 0px 5px 1px $color-primario;
+            }  
+                 
+            &:hover{
+                //x y difumidado
+                box-shadow: 0px 5px 1px $color-secundario;
+            }    
+        }
+
+        &:hover i{
+            //x y difumidado
+            color: $color-primario;
+        } 
+        
+    }
+    
+}

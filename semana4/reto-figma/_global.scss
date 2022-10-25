@@ -1,0 +1,65 @@
+$color-primario: #1F3F68;
+$color-secundario: #5A98D0;
+$color-tercero: #316099;
+//
+$font-family-h: Helvetica, sans-serif;
+// $font-family-p: Arial, Helvetica, sans-serif;
+$font-family-p: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//
+h2{
+    font-family: $font-family-h;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $color-primario;
+}
+
+h3{
+    font-family: $font-family-h;
+    padding-bottom: 30px;
+    font-weight: 700;
+    color: $color-secundario;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+p,li{
+    font-family: $font-family-p;
+    font-size: 12px;
+    line-height: 20px;
+}
+img{
+  transition: all 0.5s ease;
+  cursor: pointer;
+  &:hover{
+    border-radius: 20px;
+  }
+}
+
+*{
+    text-decoration: none;
+    color: black;
+}
+//
+/*  STICKY FOOTER    */
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .wrap main {
+    flex-grow: 1;
+  }
+  // 
+  .container{
+      margin: auto;
+      max-width: 960px;
+    //   background-color: rgba(208, 208, 208, 0.549);
+  }
+
+  @media(max-width:965px){
+    .container{
+      max-width: 90%;
+    }
+}

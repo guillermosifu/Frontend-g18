@@ -48,6 +48,7 @@ body{
 
 
 @include generate-icons("phone","telefono.jpg",rgb(252,135,143),400px);
-@include generate-icons("mail","email.png",rgb(252,135,143),400px);
-@include generate-icons("laptop","laptop.jpg",rgb(252,135,143),400px);
+@include generate-icons("mail","email.png",rgb(220,135,143),400px);
+@include generate-icons("laptop","laptop.jpg",rgb(270,135,143),400px);
+
 

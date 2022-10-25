@@ -1,0 +1,45 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 9;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+  
+      align-items: center;
+    }
+  
+    .logo {
+      img {
+        display: block;
+        width: 50px;
+      }
+    }
+  
+    .menu {
+      height: 100%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        a {
+          align-items: center;
+          display: flex;
+          justify-self: stretch;
+          height: 100%;
+          padding: 0 10px;
+          font-weight: 700;
+          // border: 1px solid $color-primario;
+  
+          &:hover {
+            font-weight: 800;
+            color: $color-primario;
+          }
+        }
+      }
+    }
+  }
