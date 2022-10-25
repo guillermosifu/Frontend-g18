@@ -11,7 +11,7 @@
     <section class="py-5">
         <div class="container d-flex flex-column gap-4">
             <h1 class="text-info text-center">calculadora boostrap</h1>
-            <form action="">
+            <form action="" class="d-flex flex-column gap-3" id="calculatorForm">
                 <div class="form-floating">
                     <input type="number" class="form-control bg-transparent" placeholder="numero 1" step="0.01" required> <label for="">Numero 1</label>
                 </div>
@@ -27,9 +27,12 @@
                 <div class="form-floating">
                     <input type="text" class="form-control bg-transparent text-light" id="number2" placeholder="Numero 2" step="0.01" required>
                     <label for="">Numero 2</label>
-
                 </div>
+                <button class="btn btn-outline-light btn-lg w-100">
+                   Calcular
+                </button>
             </form>
+           <h2 class="badge text-bg-primary fs-2" id="result"></h2>
         </div>
     </section>
 
