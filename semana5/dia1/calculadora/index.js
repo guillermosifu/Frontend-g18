@@ -12,6 +12,7 @@ const documentReady = ()=>{
         const result = document.getElementById('result')
 
         let operationResult = 0;
+    
         
         switch(operator){
             case '+':
@@ -34,6 +35,9 @@ const documentReady = ()=>{
     };
 
     calculatorForm.addEventListener('submit' , calculate)
+   
 }
 
 document.addEventListener('DOMContentLoaded', documentReady)
+
+console.log("que sera?" , operationResult)
