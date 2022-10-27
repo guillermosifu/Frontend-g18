@@ -61,5 +61,4 @@ function ej3_calcularAreaRectangulo(base_rect,altura_rect){
     }else{
         return "el area del rectangulo es :"+base_rect * +altura_rect
     }
-
 }
