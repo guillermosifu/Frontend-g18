@@ -53,9 +53,10 @@ console.log(boll,typeof (boll))
 
 // cambiar tipo de datos
 
-console.log(age,typeof toString(age))
-console.log(nombre,typeof  parseInt(nombre))
-console.log(talla,typeof parseFloat(talla))
+// console.log(age,typeof toString(age))
+// console.log(n
+//     ombre,typeof  parseInt(nombre))
+// console.log(talla,typeof parseFloat(talla))
 
 
 
