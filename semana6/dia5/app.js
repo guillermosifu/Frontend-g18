@@ -26,6 +26,8 @@ const githubFollowers = document.querySelector("#github-followers");
 const githubFollowing = document.querySelector("#github-following");
 const githubLocation = document.querySelector("#github-location");
 const githubTwitter = document.querySelector("#github-twitter");
+const githubUrl = document.querySelector("#github-url");
+const githubBuild = document.querySelector("#github-build");
 //-----------------------------------------------------
 
 //necesitamos INPUT Y BUTTON 
@@ -96,8 +98,9 @@ const setDataUser = (data)=>{
     githubFollowers.innerHTML = data.followers;
     githubFollowing.innerHTML = data.following;
     githubLocation.innerHTML= data.company;
-    githubTwitter.innerHTML = data.twitter_usernname;
-    
+    githubTwitter.innerHTML = data.twitter_usernname; 
+    githubUrl.innerHTML = data.html_url ;
+    githubBuild.innerHTML =`@${data.login}`
 
 }
 
