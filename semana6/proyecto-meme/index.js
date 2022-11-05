@@ -1,14 +1,19 @@
+"use strict";
+const listaInterna = () => {
+  const memes = [
+    {
+      nombre: "Neta me lo juras?",
+      imagen: "https://i.ytimg.com/vi/PmiERz5tqEU/maxresdefault.jpg",
+      enlace:
+        "https://c.tenor.com/werGAdQw-8sAAAAd/neta-me-lo-juras-nodding.gif",
+    },
+    
+  ];
 
-const listaInterna = ()=>{
-    const imagenes = [
-        {
-            nombre: "ponte la pilas",
-            imagen: "link de la imagen",
-            url: "url de la imagen"
-        }
-    ]
+  const buscador = document.getElementById("buscador");
+  const resultado = document.getElementById("resultado");
 
-    const buscador = document.getElementById("buscador");
-    const resultado = document.getElementById("resultado");
+ 
+};
 
-}
+
