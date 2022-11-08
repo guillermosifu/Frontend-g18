@@ -1,4 +1,4 @@
-div// primero atrapar el elem,entro donde se comonzara mostrar
+// primero atrapar el elem,entro donde se comonzara mostrar
 
 //atrapamos el  div en html 
 const pokemonContainer = document.querySelector("#row-pokemons");
@@ -20,16 +20,17 @@ const obtenerPokemones = async ()=>{
 
 
 // vamos a realizart una funcion la cual se enacrgye de pintar los pokemones
-const bgcolor = await getColorPokmeon(index +1)
+// const bgcolor = await getColorPokmeon(index +1)
 
 const setPokemonsInView = (results)=>{
     const imgUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
     results.map(async (results,index)=>{
         //por cada iteracion crea la variable html con el contenido div que ocupara 
+        const bgColor = await getColorPokemon(index +1);
       const html =`
       <div class="col-md-3 mt-3">
-      <div class="card style= "background-color : ${bgcolor};">
+    <div class="card" style ="background-color : ${bgColor};">
       <img 
       class = "card-img-top mt-2"
       width ="100"
@@ -45,7 +46,37 @@ const setPokemonsInView = (results)=>{
       //despues de craea el html concatenamnos el html y el container 
 
       pokemonContainer.innerHTML+=html
-    })
-}
+    });
+};
+
+obtenerPokemones()
+
 
 //cuando debe ejecutarse?
+
+const color ={
+    red: "rgba(255, 48, 50, 0.7)",
+    green: "rgba(83, 180, 50, 0.7)",
+    blue: "rgba(113, 104, 226, 0.7)",
+    brown: "rgba(113, 104, 226, 0.7)",
+    purple: "rgba(113, 104, 226, 0.7)",
+    pink: "rgba(255, 48, 50, 0.7)",
+    yellow: "rgba(229, 216, 0, 0.6)",
+  };
+
+  const getColorPokemon = async (id) =>{
+    const response = await fetch(
+        `https://pokeapi.co/api/v2/pokemon-species/${id}`
+    );
+    const data = await response.json();
+    //el propblema del api es que nos da colores que no son tan boinitos 
+    //para pdoer crea o utilizar un color alternativio
+    //creamo un diccioanario de color conde el key ser el color base 
+    // si data.color.name = red
+    // va buscar dentro del objeto el color por key 
+    //conel key es rojo nos retornara el rgba 
+
+    console.log(data.color.name);
+    return color [data.color.name];
+
+  }
