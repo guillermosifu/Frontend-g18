@@ -2,6 +2,9 @@
 
 //atrapamos el  div en html 
 const pokemonContainer = document.querySelector("#row-pokemons");
+//atrapar lo datos para el modal
+const pokemonName = document.querySelector("#pokemon-name");
+const pokemomImg = document.querySelector("#pokemon-img")
 
 
 //vamois a crear una funcion para obtner los Datos 
@@ -41,6 +44,7 @@ const setPokemonsInView = (results)=>{
       N.-${index + 1}</h6>
       <h4 class = "text-title">${results.name}</h4>
       </div> 
+      <button class="btn btn-danger" onclick='obtenerDetailPokemon("${results.url}")' data-bs-toggle ='modal' data-bs-target= '#modalPokemon'>ver detalle</button>
       </div>
       </div>  `;
       //despues de craea el html concatenamnos el html y el container 
@@ -53,6 +57,15 @@ obtenerPokemones()
 
 
 //cuando debe ejecutarse?
+
+const obtenerDetailPokemon = async(url)=>{
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log("detalle", data);
+  pokemonName.innerHTML = data.name;
+  pokemomImg.src = data.sprites.other.dream_world.front_default;
+
+}
 
 const color ={
     red: "rgba(255, 48, 50, 0.7)",
