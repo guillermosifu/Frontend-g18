@@ -44,7 +44,7 @@ const setPokemonsInView = (results)=>{
       N.-${index + 1}</h6>
       <h4 class = "text-title">${results.name}</h4>
       </div> 
-      <button class="btn btn-danger" onclick='obtenerDetailPokemon("${results.url}")' data-bs-toggle ='modal' data-bs-target= '#modalPokemon'>ver detalle</button>
+      <button class="btn btn-danger" onclick='obtenerDetailPokemon("${results.url}")' data-bs-toggle ='modal' data-bs-target='#modalPokemon'>ver detalle</button>
       </div>
       </div>  `;
       //despues de craea el html concatenamnos el html y el container 
